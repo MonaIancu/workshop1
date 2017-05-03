@@ -143,6 +143,7 @@ public class WarehouseOperations {
 	public static double calculateDiscount(String expirationDate, String category) throws ParseException {
 		double discount = 0;
 
+		System.out.println("ddddd");
 		SimpleDateFormat df = new SimpleDateFormat("dd.MMM.yyyy");
 		SimpleDateFormat diff = new SimpleDateFormat("dd");
 		Date expiration = df.parse(expirationDate);
